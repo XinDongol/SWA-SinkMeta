@@ -8,7 +8,7 @@ A high-performance implementation of SWA-SinkMeta.
 - [Xiao et al., 2024 (MIT & Meta & CMU & NVIDIA)](https://arxiv.org/pdf/2309.17453) 
 found that keeping the first several tokens in the sequence as 'attention sinks' helps preserve model performance when **fine-tuning** pre-trained global attention models into sliding window attention (SWA).
 
-- [Dong et al., 2024 (NVIDIA & GeTech & HKUST)](https://arxiv.org/pdf/2411.13676) used the A-shape attention mask during language model **pre-training**. In addition, they also found that prepending additional tokens (a.k.a. meta tokens) to the input sequence acts as a compressed representation of world knowledge and alleviates the
+- [Dong et al., 2024 (NVIDIA & GeTech & HKUST)](https://arxiv.org/pdf/2411.13676) used the A-shape attention mask during language model ([Hymba](https://github.com/NVlabs/hymba)) **pre-training**. In addition, they also found that prepending additional tokens (a.k.a. meta tokens) to the input sequence acts as a compressed representation of world knowledge and alleviates the
 issue of "softmax attention not being able to attend to nothing", improving performance across both general and recall-intensive tasks.
 
 ## Installation
